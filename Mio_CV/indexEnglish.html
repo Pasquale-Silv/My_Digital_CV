@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Mio CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google fonts: 
+    font-family: 'Racing Sans One', cursive; 
+    font-family: 'Fascinate Inline', cursive; 
+    font-family: 'Lora', serif; 
+    font-family: 'Bangers', cursive; -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Fascinate+Inline|Lora|Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <!-- jQuery google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="./images/img1.jpg" type="image/x-icon">
+
+    <!-- Mio JS -->
+    <script src="./javascript/translation.js"></script>
+    <script src="./javascript/behaviour.js"></script>
+
+    <title>CV - Pasquale Silvestre</title>
+
+  </head>
+
+  <body>
+      <!-- Fixed Navbar per muoversi agevolmente nel sito -->
+      <nav class="navbar fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Pasquale Silvestre</a>
+          <a class="navbar-brand" href="#competenze">My skills</a>
+          <a class="navbar-brand" href="#formazione">My education</a>
+          <a class="navbar-brand" href="#contacts">Contacts</a>
+          <a class="navbar-brand" href="./index.html">ITALIANO</a>
+          <button id="buttonInfo" type="button" class="btn btn-outline-warning" onclick="infoSitoEn()">About the site</button>
+      </nav>
+    
+      <!-- Inizio presentazione(immagine + testo) -->
+      <div class="container" id="div1">
+          <img id="img1" src="./images/img1.jpg" alt="Mia immagine personale">
+          <div>
+            <h1 id="welcome">Welcome to my digital CV!</h1>
+            <p>
+                My name is <span id="span1" class="classSpan1">Pasquale Silvestre</span>, 
+                I'm 24 years old and I'm an university student, currently I'm attending the last year 
+                of the course concerning the <span class="classSpan1">master degree</span> in <span class="classSpan1">
+                "Economics and finance"</span> at the University of Naples 
+                <span class="classSpan1">'Parthenope'</span>; I'm an addicted of computer science and programming, as you can 
+                easily guess looking at this site.
+                <br>
+                <br>
+                After taking the master degree I would like to become a data expert, 
+                to achieve this goal I'm studying databases and different programming languages 
+                that are very used in the field of 'Data Science' and in the financial sector, such as 'Python' and 'R'.
+                <br>
+                <br>
+                Desired profession: <span class="classSpan1">Data analyst / Data Scientist / Financial Analyst</span>.              
+            </p>
+          </div>
+      </div>
+
+      <!-- Reparto SKILLS -->
+      <h1 class="skillSet" id="competenze">My skills</h1>
+      <h2 id="programming">INFORMATIC EXPERTISES:</h2>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-warning">
+            <p class="pSkillInfo">PYTHON</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-dark" onclick="mostraAttestatiPython()">Certifications</button>
+            <div id="attestatiPython">
+                <button type="button" class="btn btn-dark" onclick="prevPy()">PREVIOUS</button>
+                <img  id="sliderPy" src="./images/PCAP_Python.jpg" alt="Attestato Python" width="1300px" height="900px">
+                <button type="button" class="btn btn-dark" onclick="nextPy()">NEXT</button>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-light">
+            <p class="pSkillInfo">JAVA</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-dark" onclick="mostraAttestatiJava()">Certifications</button>
+            <div id="attestatiJava">
+                <img src="./images/Java_Gi.jpg" alt="Attestato Java" width="1300px" height="900px">
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+            <p class="pSkillInfo">R</p> 
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-light">
+            <p class="pSkillInfo">DATABASE E SQL</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+            <p class="pSkillInfo">JAVASCRIPT</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-light">
+            <p class="pSkillInfo">HTML & CSS</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+            <p class="pSkillInfo">MS OFFICE</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-light">
+            <p class="pSkillInfo">C</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </li>
+      </ul>
+
+
+      <!-- Sezione 'FORMAZIONE' -->
+      <h1 class="skillSet" id="formazione">My education</h1>
+      <h2 id="titoliStudio">Educational qualifications:</h2>
+      <ul id="listaStudi">
+          <li>
+
+              Secondary school diploma in "Administration, Finance and Marketing";
+              <br>
+              Achieved at the 'Giuseppe Moscati' institute, Sant'Antimo (NA);
+              <br>
+              Final grade: 97/100.
+          </li>
+
+          <li>
+              Bachelor's degree in 'Economics';
+              <br>
+              Achieved at the University of Naples 'Parthenope';
+              <br>
+              Thesis: The Economic and Monetary Union and the European Central Bank;
+              <br>
+              Final grade: 109/110.
+          </li>
+
+          <li>
+              Master degree in 'Economics and finance';
+              <br>
+              Currently at the second year;
+              <br>
+              Expected graduation date: between september and december 2020;
+              <br>
+              The thesis will be about the 'BlockChain' technology.
+          </li>
+
+      </ul>
+
+
+      <!-- Contacts' section and social media -->
+      <div id="contacts">
+        <h1><span class="skillSet">Get in touch with me!</span></h1>
+        <div>
+            <a href="mailto:Pasquale.Silvestre@live.com" target="_blank">
+                <img alt="Posta elettronica" src="./images/postaEl.jpg" />
+            </a>
+            <a href="https://www.facebook.com/pasquale.silvestre.9" target="_blank">
+                <img alt="Facebook" src="./images/Facebook.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/pasquale-silvestre-2895b0aa/" target="_blank">
+                <img alt="Linkedin" src="./images/Linkedin.png" />
+            </a>
+            <a href="https://github.com/Pasquale-Silv" target="_blank">
+                <img alt="GitHub" src="./images/GitHub.jpg" />
+            </a>
+        </div>
+    </div>
+    <!-- Fine sezione social -->
+    
+    <div class="copyright">
+        &copy; 2020, My personal CV. All rights reserved.
+    </div>
+
+  </body>
+</html>
