@@ -53,3 +53,23 @@ var imagesPy = [
     }
     sliderPy.src = imagesPy[numPy];
   }
+
+// Data per scrivere la tua età
+var today = new Date();
+var myBirth = new Date(1995, 11, 21);
+var diff;
+var meseToday = today.getMonth();
+var meseBirth = myBirth.getMonth();
+var dayToday = today.getDate();
+var dayBirth = myBirth.getDate();
+
+if(meseToday >= meseBirth && dayToday >= dayBirth){
+    diff = today.getFullYear() - myBirth.getFullYear();      // Differenza tra anni delle date
+} else {
+    diff = today.getFullYear() - myBirth.getFullYear() - 1;      // Compleanno non ancora compiuto (-1) 
+}
+
+console.log(diff)
+console.log(typeof diff)
+var dataHtml = document.getElementById("dataAnnoHtml");
+dataHtml.innerHTML = diff;
