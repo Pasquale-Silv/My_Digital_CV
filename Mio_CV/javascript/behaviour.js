@@ -17,7 +17,7 @@ function mostraAttestatiPython() {
     boolAttestatiPy = !(boolAttestatiPy);
 }
 
-// Mostra/nascondi attestati java
+// Mostra/nascondi attestati Java
 var boolAttestatiJava = false;
 function mostraAttestatiJava() {
     if(boolAttestatiJava) {
@@ -26,6 +26,28 @@ function mostraAttestatiJava() {
         $("#attestatiJava").css("display", "block");
     }
     boolAttestatiJava = !(boolAttestatiJava);
+}
+
+// Mostra/nascondi attestati Cyber Security
+var boolAttestatiCyber = false;
+function mostraAttestatiCyber() {
+    if(boolAttestatiCyber) {
+        $("#attestatiCyber").css("display", "none");
+    } else {
+        $("#attestatiCyber").css("display", "block");
+    }
+    boolAttestatiCyber = !(boolAttestatiCyber);
+}
+
+// Mostra/nascondi attestati MS Office
+var boolAttestatiMSoffice = false;
+function mostraAttestatiMSoffice() {
+    if(boolAttestatiMSoffice) {
+        $("#attestatiMSoffice").css("display", "none");
+    } else {
+        $("#attestatiMSoffice").css("display", "block");
+    }
+    boolAttestatiMSoffice = !(boolAttestatiMSoffice);
 }
 
 // Slider per le immagini degli attestati Python

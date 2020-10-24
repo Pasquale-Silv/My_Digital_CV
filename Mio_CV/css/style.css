@@ -95,6 +95,14 @@ ul.list-group li {
     display: none;
 }
 
+#attestatiCyber {
+    display: none;
+}
+
+#attestatiMSoffice {
+    display: none;
+}
+
 #attestatiJava {
     display: none;
 }
